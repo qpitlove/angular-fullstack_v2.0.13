@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - '0.10'
+before_script:
+  - npm install -g bower grunt-cli
+  - gem install sass
+  - bower install
+  - 'npm run update-webdriver'
+services: mongodb
